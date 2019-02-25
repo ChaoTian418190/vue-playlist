@@ -2,9 +2,9 @@
   <div class="users">
     <h1>hello</h1>
       <ul>
-        <li v-for="user in users" @click="user.show = !user.show">
+        <li v-for="user in users">
           <h2>{{user.name}}</h2>
-          <h3 v-show="user.show">{{user.speciality}}</h3>
+          <h3>{{user.email}}</h3>
         </li>
       </ul>
       <button @click="deleteUser">删除引用传值</button>
